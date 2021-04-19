@@ -22,12 +22,15 @@ repositories {
   maven {
     url = uri("https://oss.sonatype.org/content/repositories/snapshots/")
   }
+  mavenLocal()
 }
 
 dependencies {
   implementation(kotlin("stdlib"))
 
-  implementation("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
+  implementation("org.spigotmc:spigot-api:1.16.2-R0.1-SNAPSHOT")
+
+  compileOnly(dependencyNotation = "org.spigotmc:spigot:1.16.2-R0.1-SNAPSHOT")
 }
 
 tasks.withType<KotlinCompile> {

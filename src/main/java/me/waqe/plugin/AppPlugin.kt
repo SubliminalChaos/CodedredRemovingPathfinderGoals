@@ -1,5 +1,6 @@
 package me.waqe.plugin
 
+import me.waqe.plugin.commands.SpawnMob
 import org.bukkit.event.EventHandler
 import org.bukkit.plugin.java.JavaPlugin
 import org.bukkit.event.Listener
@@ -15,8 +16,9 @@ class App : JavaPlugin(), Listener {
 
         //this.reloadConfig()
         //this.saveDefaultConfig()
-
+        this.getCommand("spawnhusk")?.setExecutor(SpawnMob())
         this.server.pluginManager.registerEvents(this, this)
+
     }
 
     override fun onDisable() {

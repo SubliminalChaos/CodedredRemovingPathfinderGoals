@@ -42,6 +42,7 @@ hs_err_pid*
 
 ### Gradle ###
 .gradle
+.idea
 build/
 
 # Ignore Gradle GUI config
@@ -158,3 +159,4 @@ fabric.properties
 .idea/**/markdown-navigator/
 
 # End of https://www.gitignore.io/api/intellij
+/.idea/
